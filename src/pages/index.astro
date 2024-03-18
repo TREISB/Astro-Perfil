@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import menu from "../icons/header/menu.svg";
+import headerLogo from "../icons/logos/header_logo.svg";
+import { Icon } from "../shared/Icon";
+import "../styles/global.scss";
+import pin from "../icons/header/locale_ping.svg";
+import arrowDown from "../icons/header/ic_arrow_down.svg";
+import arrowLeft from "../../public/arrow-left.svg";
+import eventoIMG from "../../public/Product.png";
+import message from "../../public/message.svg";
+import user from "../../public/user.svg";
+import message2 from "../../public/message2.svg";
+import calendar from "../../public/calendar-tick.svg";
+import pin2 from "../../public/pin2.svg";
+import { UserPhotos } from "../components/UserPhoto";
+import { OptionsMenu } from "../components/OptionsMenu";
+---
+
+<Layout title="Beplauze">
+  <main>
+    <header
+      class="bg-green-500 flex flex-row items-center justify-between py-4 gap-2 w-full"
+    >
+      <div class="bg-pink-500 flex flex-row items-center gap-3">
+        <Icon icon={menu} alt="Beplauze logo" width={18} height={18} />
+        <Icon icon={headerLogo} alt="Beplauze logo" width={100} height={25} />
+      </div>
+      <div class="bg-yellow-400 flex flex-row items-center gap-2">
+        <Icon icon={pin} alt="Beplauze logo" width={18} height={18} />
+        <p>Rio de Janeiro</p>
+        <Icon icon={arrowDown} alt="Beplauze logo" width={18} height={18} />
+      </div>
+    </header>
+    <div class="flex flex-row items-center justify-between py-4 gap-2 w-full">
+      <Icon icon={arrowLeft} alt="Beplauze logo" width={18} height={18} />
+      <p><b>Fernanda,</b> 32</p>
+      <OptionsMenu client:only="react" />
+    </div>
+    <div class="flex flex-col items-center gap-3" style={{ width: "80vw" }}>
+      <UserPhotos client:only="react" />
+      <button
+        class="bg-red flex flex-row items-center gap-2 rounded-lg h-10 justify-center w-full">
+        <Icon icon={message} alt="Beplauze logo" width={14} height={13.99} />
+        <p class="text-white text-base font-regular">Enviar mensagem</p>
+      </button>
+      <div class="bg-red-500 flex flex-row items-center py-2 gap-2 w-full">
+        <Icon icon={message2} alt="Beplauze logo" width={15} height={15} />
+        <p>“Gosto de festas e música boa!”</p>
+      </div>
+      <hr class="border-gray w-full" />
+      <div class="bg-red-500 flex flex-row items-center py-2 gap-2 w-full">
+        <Icon icon={user} alt="Beplauze logo" width={15} height={15} />
+        <p>Mulher</p>
+      </div>
+      <div class="bg-red-500 flex flex-row items-center py-2 gap-2 w-full">
+        <Icon icon={pin2} alt="Beplauze logo" width={15} height={15} />
+        <p>Rio de Janeiro</p>
+      </div>
+      <hr class="border-gray w-full" />
+      <section class="bg-red-500 flex items-center py-4 gap-2 w-full flex-col">
+        <div class="bg-purple-500 flex flex-row gap-2 items-start ml-0 mr-auto">
+          <Icon icon={calendar} alt="Beplauze logo" width={15} height={15} />
+          <p>Eventos confirmados</p>
+        </div>
+        <div class="flex items-center gap-2 flex-row ml-0 mr-auto mt-2">
+          <img
+            src={eventoIMG.src}
+            alt="Beplauze logo"
+            width={100}
+            height={100}
+          />
+          <img
+            src={eventoIMG.src}
+            alt="Beplauze logo"
+            width={100}
+            height={100}
+          />
+          <img
+            src={eventoIMG.src}
+            alt="Beplauze logo"
+            width={100}
+            height={100}
+          />
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<style lang="scss">
+  body {
+    background-color: #f5f5f5;
+  }
+
+  main {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+</style>
