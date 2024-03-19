@@ -54,7 +54,8 @@ export default {
       },
       margin: {
         default: '18px',
-        4.5: '1.125rem'
+        4.5: '1.125rem',
+        8.5: '35px'
       },
       padding: {
         4.5: '1.125rem'
@@ -86,7 +87,8 @@ export default {
         42: '10.5rem',
         card: '160px',
         'card-lg': '168px',
-        sidebarInfo: 'calc(80vw - 160px)'
+        sidebarInfo: 'calc(80vw - 160px)',
+        
       },
       height: {
         13: '3.25rem',
