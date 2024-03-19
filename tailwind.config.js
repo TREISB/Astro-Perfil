@@ -31,7 +31,8 @@ export default {
         twemoji: ['Twemoji Country Flags', 'sans-serif']
       },
       fontSize: {
-        tag: '10px'
+        tag: '10px',
+        title: '20px'
       },
       borderWidth: {
         1: '1px',

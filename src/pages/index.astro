@@ -41,7 +41,7 @@ import logoBranca from "../icons/logos/logo_white.svg";
     </header>
     <div class="flex items-center justify-between my-4.5 gap-2 mx-4">
       <Icon icon={arrowLeft} alt="Voltar" width={15} height={15} />
-      <span class="text-2xl">
+      <span class="text-title">
         <span class="font-bold">Fernanda,</span>
         <span class="font-light">32</span>
       </span>
@@ -62,27 +62,27 @@ import logoBranca from "../icons/logos/logo_white.svg";
           <p class="text-white text-base font-regular">Enviar mensagem</p>
         </button>
       </div>
-      <div class="tablet:visible flex flex-col gap-3 mt-2 tablet:mt-0">
-        <div class="flex items-center py-2 gap-2 w-full mt-5 tablet:mt-0">
+      <div class="tablet:visible flex flex-col tablet:mt-0">
+        <div class="flex items-center gap-1.5 w-full mt-4.5 tablet:mt-0">
           <Icon icon={message2} alt="Beplauze logo" width={15} height={15} />
           <p>“Gosto de festas e música boa!”</p>
         </div>
-        <hr class="border-gray w-full my-5 tablet:my-0" />
-        <div class="gap-3 flex flex-col items-center w-full">
-          <div class="flex items-center py-2 w-full">
+        <hr class="border-gray w-full my-5" />
+        <div class="flex flex-col items-center w-full">
+          <div class="flex items-center py-2 w-full gap-1.5">
             <Icon icon={user} alt="Beplauze logo" width={15} height={15} />
             <p>Mulher</p>
           </div>
-          <div class="flex items-center justify-start py-2 gap-2 w-full">
+          <div class="flex items-center justify-start py-2 gap-1.5 w-full">
             <Icon icon={pin2} alt="Beplauze logo" width={15} height={15} />
             <p>Rio de Janeiro</p>
           </div>
         </div>
-        <hr class="border-gray w-full my-5 tablet:my-0" />
+        <hr class="border-gray w-full my-5" />
         <section
-          class="flex items-center py-4 gap-2 w-full flex-col tablet:py-0"
+          class="flex items-center w-full flex-col tablet:py-0"
         >
-          <div class="bg-purple-500 flex gap-2 items-start ml-0 mr-auto mb-4">
+          <div class="bg-purple-500 flex gap-1.5 items-start ml-0 mr-auto mb-4">
             <Icon icon={calendar} alt="Beplauze logo" width={15} height={15} />
             <p>Eventos confirmados</p>
           </div>
@@ -109,13 +109,13 @@ import logoBranca from "../icons/logos/logo_white.svg";
         </section>
       </div>
       <p
-        class="font-bold text-lg text-accent mt-9 mb-8 mx-auto bg-red tablet:invisible"
+        class="font-bold text-lg text-accent mt-9 mb-8 mx-auto tablet:invisible"
       >
         Voltar a home
       </p>
     </div>
     <p
-        class="font-bold text-lg text-accent mb-8 mx-auto "
+        class="font-bold text-lg text-accent mb-8 mx-auto mobile:invisible tablet:visible"
       >
         Voltar a home
       </p>
